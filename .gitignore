@@ -33,3 +33,19 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# Dependencies
+node_modules/
+
+# Expo / Metro / native build output
+.expo/
+dist/
+web-build/
+android/
+ios/
+
+# Local build & data caches
+.cache/
+*.tsbuildinfo
+npm-debug.log*
+yarn-error.log*
