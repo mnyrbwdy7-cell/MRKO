@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "رتل — RATTIL",
+    "slug": "rattil",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "rattil",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0B3D2E"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rattil.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "يستخدم رتل الميكروفون للتسميع فقط، وتُعالج القراءة على جهازك ولا تُرسل إلى خوادم خارجية.",
+        "NSSpeechRecognitionUsageDescription": "يستخدم رتل التعرف على الكلام لتتبع قراءتك وتصحيح الحفظ محلياً على جهازك."
+      }
+    },
+    "android": {
+      "package": "com.rattil.app",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-speech-recognition",
+      [
+        "expo-notifications",
+        {
+          "color": "#0B3D2E"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}
